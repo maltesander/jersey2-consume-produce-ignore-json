@@ -1,0 +1,111 @@
+{
+	"variables": [],
+	"info": {
+		"name": "tutorial-academy-jersey2-produce-consume-ignore-json",
+		"_postman_id": "cbe5e35f-8f36-744c-5e8e-45ae46194b8a",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ignorePropertiesTrue -> No Exception",
+			"request": {
+				"url": "http://localhost:8080/jersey2-consume-produce-ignore-json/post/ignorePropertiesTrue",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : 1,\n\t\"title\" : \"This is a test post\",\n\t\"categories\" : [ \"category1\", \"category2\" ],\n\t\"postetAt\" : 1513277265518,\n\t\"undefinedProperty\" : \"Dont process me!\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ignorePropertiesFalse -> Exception",
+			"request": {
+				"url": "http://localhost:8080/jersey2-consume-produce-ignore-json/post/ignorePropertiesFalse",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : 1,\n\t\"title\" : \"This is a test post\",\n\t\"categories\" : [ \"category1\", \"category2\" ],\n\t\"postetAt\" : 1513277265518,\n\t\"undefinedProperty\" : \"Dont process me!\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "userHidePassword",
+			"request": {
+				"url": "http://localhost:8080/jersey2-consume-produce-ignore-json/user/userHidePassword",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Mark Twain\",\n\t\"password\" : \"secret\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "userIgnorePassword",
+			"request": {
+				"url": "http://localhost:8080/jersey2-consume-produce-ignore-json/user/userIgnorePassword",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Mark Twain\",\n\t\"password\" : \"secret\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "userNoAnnotation",
+			"request": {
+				"url": "http://localhost:8080/jersey2-consume-produce-ignore-json/user/userNoAnnotation",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Mark Twain\",\n\t\"password\" : \"secret\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
