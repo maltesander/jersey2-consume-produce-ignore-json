@@ -21,7 +21,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"id\" : 1,\n\t\"title\" : \"This is a test post\",\n\t\"categories\" : [ \"category1\", \"category2\" ],\n\t\"postetAt\" : 1513277265518,\n\t\"undefinedProperty\" : \"Dont process me!\"\n}"
+					"raw": "{\n\t\"id\" : 1,\n\t\"title\" : \"This is a test post\",\n\t\"categories\" : [ \"category1\", \"category2\" ],\n\t\"postedAt\" : 1513277265518,\n\t\"undefinedProperty\" : \"Dont process me!\"\n}"
 				},
 				"description": ""
 			},
